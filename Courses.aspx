@@ -157,17 +157,20 @@
 			border-top-right-radius: var(--radius-xl);
 		}
 
-		.courses-grid td {
-			padding: 1.25rem 1rem;
-			border-bottom: none;
-			vertical-align: middle;
-			transition: all 0.2s ease;
-		}
+		
 
 		.courses-grid tr {
 			transition: all 0.2s ease;
 		}
 
+
+        .courses-grid td {
+			padding: 1.25rem 1rem;
+			border-bottom: none;
+			vertical-align: middle;
+			transition: all 0.2s ease;
+		}
+        
 		.courses-grid tr:hover {
 			background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
 			transform: translateY(-1px);
