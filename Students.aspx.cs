@@ -11,18 +11,20 @@ namespace WebApplication
 {
     public partial class Students : System.Web.UI.Page
 {
-    private string SortExpression
-    {
-        get { return ViewState["SortExpression"] as string ?? "LastName"; }
-        set { ViewState["SortExpression"] = value; }
-    }
-
     private SortDirection SortDirection
     {
         get { return ViewState["SortDirection"] != null ? (SortDirection)ViewState["SortDirection"] : SortDirection.Ascending; }
         set { ViewState["SortDirection"] = value; }
     }
 
+
+    private string SortExpression
+    {
+        get { return ViewState["SortExpression"] as string ?? "LastName"; }
+        set { ViewState["SortExpression"] = value; }
+    }
+
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         // Устанавливаем кодировку UTF-8
